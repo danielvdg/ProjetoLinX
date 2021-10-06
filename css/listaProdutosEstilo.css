@@ -1,0 +1,119 @@
+@font-face {
+  font-family: HelveticaNeue;
+  src: url("/fonts/HelveticaNeue-Regular.ttf");
+}
+body {
+  font-family: "HelveticaNeue";
+  margin: 0 20%;
+  
+}
+.cabecalhoContainer {
+  width: 100%;
+  height: 400px;
+  background: #707070 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  opacity: 1;
+  text-align: center;
+  display: grid;
+  grid-template-areas:
+    "cabecalhoMedio,cabecalhoMedio,cabecalhoMedio,cabecalhoMedio"
+    "cabecalhoMaior,cabecalhoMaior,cabecalhoMaior,cabecalhoMaior"
+    "cabecalhoMenor,cabecalhoMenor,cabecalhoMenor,cabecalhoMenor"
+    "btns,btns,btns,btns";
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(4, auto);
+  grid-gap: 20px;
+}
+#cabecalhoMedio {
+  grid-area: cabecalhoMedio;
+  grid-row: 1;
+  grid-column: 1 / 5;
+
+  font: normal normal normal 20px/24px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  text-align: center;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+#cabecalhoMaior {
+  grid-area: cabecalhoMaior;
+  grid-row: 2;
+  text-align: center;
+  font: normal normal bold 40px/49px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  grid-column: 1 / 5;
+  font-size: 40px;
+  font-weight: b;
+}
+#cabecalhoMenor {
+  grid-area: cabecalhoMenor;
+  grid-row: 3;
+  grid-column: 1 / 5;
+  font-size: 14px;
+  text-align: center;
+  font: normal normal normal 14px/16px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.buttonCabecalho {
+  grid-area: btns;
+  font-size: 14px;
+  grid-row: 4;
+  grid-column: 2 / 4;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.formContainer {
+  display: flex;
+  width: 100%;
+  height: 400px;
+}
+.formTitle{
+    text-align: left;
+font: normal normal normal 20px/24px Helvetica Neue;
+letter-spacing: 0px;
+color: #888888;
+opacity: 1;
+}
+.formText {
+  display: flex;
+  text-align: left;
+  font: normal normal normal 12px/18px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #888888;
+  opacity: 1;
+  padding: 5px; 
+  width: 90%; 
+}
+
+.formInformationContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  font: normal normal normal 12px/14px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #888888;
+  opacity: 1;
+
+}
+
+.informationPerson{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+
+}
