@@ -62,34 +62,48 @@
             <input type="text" id="cpf" />
           </div>
           <div class="informationPersonRadio">
-            <input type="radio" name="genre" id="male" />
-            <label for="genre">Masculino</label>
-            <input type="radio" name="genre" id="female" />
-            <label for="genre">Feminino</label>
+            <div>
+              <input type="radio" name="genre" id="male" />
+              <label for="genre">Masculino</label>
+
+            </div>
+            <div>
+              <input type="radio" name="genre" id="female" />
+              <label for="genre">Feminino</label>
+
+            </div>
           </div>
-          <div class="informationPersonSubmit">
-            <button>Enviar</button>
+          <div class="informationPersonSubmitContainer">
+            <button class="informationPersonSubmit">Enviar</button>
           </div>
         </form>
       </div>
     </section>
     <section class="listOfProductContainer">
-      <h1>Sua seleção especial</h1>
+      <h1 class="listOfProductTitle"></h1><br><br>
       <div class="card"></div>
     </section>
     <section class="shareContainer">
-      <h1>Compartilhe a novidade</h1>
-      <h2>
+      <h1 class="shareTitle"></h1>
+      <h2 class="shareSubtitle">
         Quer que seus amigos também ganhem a lista personalizada deles? Preencha
         agora!
       </h2>
-      <div>
-        <label for="nameFriend">Nome do seu amigo:</label>
-        <input type="text" id="nameFriend" />
-        <label for="emailfriend">E-mail:</label>
-        <input type="email" id="emailFriend" />
+      <div class="shareFormContainer">
+        <div class="shareForm">
+          <label for="nameFriend">Nome do seu amigo:</label><br>
+          <input type="text" id="nameFriend" />
+
+        </div>
+        <div class="shareForm">
+          <label for="emailfriend">E-mail:</label><br>
+          <input type="email" id="emailFriend" />
+
+        </div>
       </div>
-      <button>Enviar agora</button>
+      <div class="shareBtn">
+        <button id="shareBtnSubmit">Enviar agora</button>
+      </div>
     </section>
   </body>
 </html>
