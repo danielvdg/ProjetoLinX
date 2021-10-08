@@ -1,11 +1,19 @@
-var  btnCatalog = document.querySelector('.btnCatalog')
-
-btnCatalog.addEventListener('click',()=>{
-    console.log('teste');
+// let btnCatalog = document.querySelector('.btnCatalog')
+// let page = 1
+// btnCatalog.addEventListener('click',()=>{
+//     console.log('teste');
+   
+// })
+let page = 1
+$('.btnCatalog').on('click',()=>{
+    for(let i = 0 ; i > page ; i++){
+        page = page + 1
+    }
+    console.log(page);
+    return page
 })
 
-
-fetch('https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1')
+fetch(`https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=${page}`)
 .then(response => response.json())
 .then(response => 
     $('.catalogContainer').html(`
