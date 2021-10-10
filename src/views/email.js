@@ -1,13 +1,13 @@
-
-
 let page = 1;
 $(".btnCatalog").on("click", () => {
-     page++
-    console.log(page);
-fetch(`https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=${page}`)
-.then(response => response.json())
-.then(response => 
-    $('.catalogContainer').html(`
+  page++;
+  console.log(page);
+  fetch(
+    `https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=${page}`
+  )
+    .then((response) => response.json())
+    .then((response) =>
+      $(".catalogContainer").html(`
     <ul class="card">
         <li class="imgCard"><img src='${response.products[0].image}'></li>
         <li class="nameCard">${response.products[0].name}</li>
@@ -20,11 +20,14 @@ fetch(`https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?pag
        </ul>  
          
        
-    `))
-fetch(`https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=${page}`)
-.then(response => response.json())
-.then(response => 
-    $('.catalogContainer1').html(`
+    `)
+    );
+  fetch(
+    `https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=${page}`
+  )
+    .then((response) => response.json())
+    .then((response) =>
+      $(".catalogContainer1").html(`
     <ul class="card">
         <li class="imgCard"><img src='${response.products[1].image}'></li>
         <li class="nameCard">${response.products[1].name}</li>
@@ -37,12 +40,15 @@ fetch(`https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?pag
        </ul>  
          
        
-    `))
-})
-fetch(`https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=${page}`)
-.then(response => response.json())
-.then(response => 
-    $('.catalogContainer').html(`
+    `)
+    );
+});
+fetch(
+  `https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=${page}`
+)
+  .then((response) => response.json())
+  .then((response) =>
+    $(".catalogContainer").html(`
     <ul class="card">
         <li class="imgCard"><img src='${response.products[0].image}'></li>
         <li class="nameCard">${response.products[0].name}</li>
@@ -55,11 +61,14 @@ fetch(`https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?pag
        </ul>  
          
        
-    `))
-fetch(`https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=${page}`)
-.then(response => response.json())
-.then(response => 
-    $('.catalogContainer1').html(`
+    `)
+  );
+fetch(
+  `https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=${page}`
+)
+  .then((response) => response.json())
+  .then((response) =>
+    $(".catalogContainer1").html(`
     <ul class="card">
         <li class="imgCard"><img src='${response.products[1].image}'></li>
         <li class="nameCard">${response.products[1].name}</li>
@@ -72,4 +81,5 @@ fetch(`https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?pag
        </ul>  
          
        
-    `))
+    `)
+  );
