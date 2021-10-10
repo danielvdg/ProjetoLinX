@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/email.css" />
-    <link rel="stylesheet" href="css/stylepadrao.css" />
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/email.css" />
+    <link rel="stylesheet" href="src/css/stylepadrao.css" />
 
-    <link rel="stylesheet" href="css/reset.css" />
     <title>email</title>
   </head>
   <body>
@@ -23,7 +23,7 @@
     </header>
     <section class="listOfProductContainer">
       <div class="mensagemUserContainer">
-        <p class="prezado">Ola,<span class="nameEmail">Daniel</span></p>
+        <p class="prezado">Ola,<span class="nameBuyer"></span></p>
         <p class="subFraseParaUsuário">
           Fizemos uma lista especial de produtos apenas para você. Isso mesmo:
           nesta lista temos só produtos que você pode gostar. Seu amigo Ciclano
@@ -47,10 +47,11 @@
       </p>
     </footer>
     <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"
     ></script>
-    <script src="javascript/listaDeProdutos.js"></script>
+    <script src="src/views/email.js"></script>
+    <script src="/src/views/emailNome.js"></script>
   </body>
 </html>
